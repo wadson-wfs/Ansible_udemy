@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
         teste_config.vm.box = "centos/8"
         teste_config.vbguest.auto_update = false
         teste_config.vbguest.installer_options = { allow_kernel_upgrade: true }
-        teste_config.vm.network "private_network", ip: "192.168.15.101"
+        teste_config.vm.network "private_network", ip: "192.168.14.101"
         #teste_config.vm.synced_folder ".", "/vagrant", type: "rsync", rsync__exclude: ".git/"
         teste_config.vm.provision "shell", path: "provision.sh"
         config.vm.provider:virtualbox do |v|
