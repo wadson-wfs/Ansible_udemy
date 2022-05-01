@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
         teste_config.vbguest.auto_update = false
         teste_config.vbguest.installer_options = { allow_kernel_upgrade: true }
         teste_config.vm.network "private_network", ip: "192.168.14.99"
-        teste_config.vm.synced_folder ".", "./vagrant", type: "rsync", rsync__exclude: ".git/"
+        teste_config.vm.synced_folder ".", "//vagrant", type: "rsync", rsync__exclude: ".git/"
         teste_config.vm.provision "shell", path: "provision.sh"
         config.vm.provider:virtualbox do |v|
             v.memory = 600

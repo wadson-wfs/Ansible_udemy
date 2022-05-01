@@ -10,6 +10,6 @@ echo "inicio da instalação do ansible"
 dnf install -y vim ansible
 cat <<EOT >> /etc/hosts
 192.168.14.99 ansible
-192.168.14.10 centos8
+192.168.14.101 centos8
 192.168.14.102 debian10
 EOT
