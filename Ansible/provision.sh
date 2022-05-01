@@ -9,7 +9,7 @@ echo "inicio da instalação do ansible"
 #sudo yum update -y
 dnf install -y vim ansible
 cat <<EOT >> /etc/hosts
-192.168.15.99 ansible
-192.168.1.3 app01
-192.168.1.4 db01
+192.168.14.99 ansible
+192.168.14.10 centos8
+192.168.14.102 debian10
 EOT
